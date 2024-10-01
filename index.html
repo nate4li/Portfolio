@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nate's World</title>
+
+        <style>
+            @font-face {
+                font-family: Designer;
+                src: url(Designer.otf);
+            }
+            body{
+                background-image: url(gagcity2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: scroll;
+            }
+            h1{
+                font-family: Designer;
+                font-size: 66px;
+                transform: rotate(10deg);
+                margin-bottom: 80px;
+            }
+            a{
+                visibility: hidden;
+                font-family: Designer;
+                font-size: 38px;
+                color: greenyellow;
+                padding-top: 25px;
+
+                text-decoration: none;
+            }
+            div.circle{
+                background-color: rgba(237, 0, 118, 0.424);
+                margin-top: 9rem;
+                margin-left: 15rem;
+                padding: 150px;
+                width: 40%;
+                height: 10%;
+                border-radius: 100%;
+                border: 14px solid rgb(247, 23, 135);
+                text-align: center;
+                filter: drop-shadow(6px 5px 4px rgb(252, 60, 156));
+            }
+            div.circle:hover{
+                background-color: rgba(112, 210, 0, 0.491);
+                margin-top: 9rem;
+                margin-left: 15rem;
+                padding: 150px;
+                width: 42%;
+                height: 42%;
+                border-radius: 100%;
+                border: 14px solid rgb(103, 193, 0);
+                text-align: center;
+                filter: drop-shadow(6px 5px 4px rgb(112, 210, 0));
+
+                transition: width 1s, height 1s, background-color 1s;
+            }
+            div.circle:hover > a{
+                visibility: visible;
+                animation: fadeIn 5s;
+            }
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <!---->
+        <div class="circle">
+            <h1 id="siteTitle" style="color: rgb(196, 1, 98); filter: drop-shadow(4px 3px 2px rgb(164, 0, 82));">Nate's World</h1>
+            <a href="NateTemplate2.html">Access Granted</a>
+        </div>
+    </body>
+</html>
